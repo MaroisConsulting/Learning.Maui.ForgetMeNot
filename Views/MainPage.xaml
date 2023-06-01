@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ForgetMeNot.Views.MainPage">
+
+        <VerticalStackLayout Spacing="25"
+                             Padding="30,0"
+                             VerticalOptions="Center">
+
+        <Image HeightRequest="200"
+               HorizontalOptions="Center"
+               RotationY="-20"
+               RotationX="20"
+               Source="{Binding IconName}"/>
+
+        <Label BackgroundColor="Red"
+               FontAttributes="Bold"
+               FontSize="Small"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               LineBreakMode="WordWrap"
+               Margin="20"
+               Padding="10"
+               Text="{Binding FullName}"
+               TextColor="Yellow"
+               SemanticProperties.HeadingLevel="Level1"
+               VerticalTextAlignment="Center"
+               x:Name="HelloLabel" />
+
+        </VerticalStackLayout>
+
+</ContentPage>
